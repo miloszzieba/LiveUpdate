@@ -1,4 +1,5 @@
 using LiveUpdatePerformance;
+using LiveUpdatePerformance.Services;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,12 +10,14 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyHeader()
             .AllowAnyMethod()
-            .WithOrigins("http://localhost:3000")
+            .WithOrigins("http://localhost:3000", "http://localhost:8080")
             .AllowCredentials();
     });
 });
 
-builder.Services.AddControllers();
+builder.Services.AddSingleton<DataService>();
+
+builder.Services.AddScoped<LiveUpdateHub>(serviceProvider => new LiveUpdateHub(serviceProvider.GetRequiredService<DataService>()));
 
 builder.Services.AddSignalR();
 
@@ -29,7 +32,5 @@ var app = builder.Build();
 app.UseCors("ClientPermission");
 
 app.MapHub<LiveUpdateHub>("/liveupdate");
-
-app.MapControllers();
 
 app.Run();

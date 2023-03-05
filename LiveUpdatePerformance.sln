@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveUpdatePerformance", "LiveUpdatePerformance\LiveUpdatePerformance.csproj", "{43892B45-0C2E-4767-9E4D-CF356D8D66CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiveUpdatePerformance", "LiveUpdatePerformance\LiveUpdatePerformance.csproj", "{43892B45-0C2E-4767-9E4D-CF356D8D66CD}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "liveupdatereact", "liveupdatereact\liveupdatereact.esproj", "{E7943F39-9D3F-4FCA-A4A6-AC0DAB596BA1}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "liveupdatevue", "liveupdatevue\liveupdatevue.esproj", "{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,12 @@ Global
 		{E7943F39-9D3F-4FCA-A4A6-AC0DAB596BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7943F39-9D3F-4FCA-A4A6-AC0DAB596BA1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E7943F39-9D3F-4FCA-A4A6-AC0DAB596BA1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

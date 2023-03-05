@@ -26,8 +26,7 @@ namespace LiveUpdatePerformance
             {
                 await Task.Delay(1000);
                 var data = this._dataService.GetLatestChanges();
-                var json = JsonConvert.SerializeObject(data);
-                await this._hubContext.Clients.All.SendAsync("Update", json);
+                await this._hubContext.Clients.All.SendAsync("Update", data);
             }
         }
     }

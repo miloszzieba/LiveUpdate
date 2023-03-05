@@ -25,6 +25,7 @@ namespace LiveUpdatePerformance.Services
                 var valueChanged = _random.NextDouble() > 0.5;
                 if (valueChanged)
                 {
+                    row.LastValueDate = DateTime.UtcNow;
                     var valueIncreased = _random.NextDouble() > 0.5;
                     if (valueIncreased)
                     {
@@ -61,16 +62,16 @@ namespace LiveUpdatePerformance.Services
 
         private static Row[] InitRows()
         {
-            return Enumerable.Range(1, 50).Select(x =>
+            return Enumerable.Range(1, 500).Select(x =>
             {
-                var value = new decimal(_random.Next(0, 100)) + new decimal(_random.NextDouble());
+                var value = new decimal(_random.Next(0, 100)) + (decimal)(_random.Next(0,100)) / 100;
                 return new Row()
                 {
                     Id = x,
-                    Ticker = RandomString(4),
+                    Ticker = RandomString(_random.Next(1, 5)),
                     LastValue = value,
                     LastValueDate = DateTime.UtcNow,
-                    HighestBuyValue = Math.Floor(value * 900) / 100,
+                    HighestBuyValue = Math.Floor(value * 90) / 100,
                     HighestBuyVolume = _random.Next(1, 100),
                     LowestSellValue = Math.Floor(value * 110) / 100,
                     LowestSellVolume = _random.Next(1, 100),

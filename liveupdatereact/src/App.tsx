@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import LiveUpdate from './LiveUpdate';
+import Table from './Table';
 
 const App = () => {
   return (
-      <div className="App">
-          <LiveUpdate></LiveUpdate>
+    <div className="App">
+      <Table></Table>
     </div>
   );
 }
