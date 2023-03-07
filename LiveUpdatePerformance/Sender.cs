@@ -24,7 +24,7 @@ namespace LiveUpdatePerformance
         {
             while (!cancellationToken.IsCancellationRequested)
             {
-                await Task.Delay(1000);
+                await Task.Delay(200);
                 var data = this._dataService.GetLatestChanges();
                 await this._hubContext.Clients.All.SendAsync("Update", data);
             }

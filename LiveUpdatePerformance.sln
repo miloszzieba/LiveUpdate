@@ -9,6 +9,8 @@ Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "liveupdatereact", "liveupda
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "liveupdatevue", "liveupdatevue\liveupdatevue.esproj", "{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "liveupdatesvelte", "liveupdatesvelte\liveupdatesvelte.esproj", "{F92BE09B-2C1C-4F27-91A7-68643000D0B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,12 @@ Global
 		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BE3C5683-4B83-4F45-B10C-42A0F8CF803C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F92BE09B-2C1C-4F27-91A7-68643000D0B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
